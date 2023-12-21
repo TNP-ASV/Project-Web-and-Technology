@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Product Management</title>
+    <!-- Include your CSS and JavaScript files here -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Admin Product Management</h1>
+            <nav class="main-nav">
+                <div class="menu-toggle" id="menu-toggle">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <ul class="menu" id="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="admin-account.html">admin account</a></li>
+                    <li><a href="admin-product.html">admin product</a></li>
+                    <!--
+                    <li><a href="#add-product">Add Product</a></li>
+                    <li><a href="#edit-product">Edit Product</a></li>
+                    <li><a href="#delete-product">Delete Product</a></li>
+                    <li><a href="#search-product">Search Product</a></li>
+                    -->
+                </ul>
+            </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <!-- Add sections or forms for different product management features -->
+        <section id="add-product">
+            <h2>Add Product</h2>
+            <form action="add_product.php" method="POST" enctype="multipart/form-data">
+                <!-- Input fields for product details -->
+                <label for="product-name">Product Name:</label>
+                <input type="text" id="product-name" name="product-name" required>
+        
+                <label for="product-description">Description:</label>
+                <textarea id="product-description" name="product-description"></textarea>
+        
+                <label for="product-price">Price:</label>
+                <input type="number" id="product-price" name="product-price" step="0.01" required>
+        
+                <label for="product-image">Image:</label>
+                <input type="file" id="product-image" name="product-image">
+        
+                <!-- Add a submit button -->
+                <button type="submit">Add</button>
+            </form>
+        </section>
+        
+
+        <section id="edit-product">
+            <h2>Edit Product</h2>
+            <!-- Display existing products with edit buttons -->
+            <table>
+                <!-- Table headers -->
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <!-- Table data -->
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Product A</td>
+                        <td>Description of Product A</td>
+                        <td>$19.99</td>
+                        <td><button>Edit</button></td>
+                    </tr>
+                    <!-- Add more product rows as needed -->
+                </tbody>
+            </table>
+        
+            <!-- Form for editing a product -->
+            <form action="edit_product.php" method="POST">
+                <!-- Input fields for editing product details -->
+                <label for="edit-product-name">Product Name:</label>
+                <input type="text" id="edit-product-name" name="edit-product-name" required>
+        
+                <label for="edit-product-description">Description:</label>
+                <textarea id="edit-product-description" name="edit-product-description"></textarea>
+        
+                <label for="edit-product-price">Price:</label>
+                <input type="number" id="edit-product-price" name="edit-product-price" step="0.01" required>
+        
+                <!-- Add a submit button for updating the product -->
+                <button type="submit">Update</button>
+            </form>
+        </section>
+        
+
+        <section id="delete-product">
+            <h2>Delete Product</h2>
+            <!-- Display existing products with delete buttons -->
+            <ul>
+                <li>
+                    Product A
+                    <button>Delete</button>
+                </li>
+                <li>
+                    Product B
+                    <button>Delete</button>
+                </li>
+                <!-- Add more product items as needed -->
+            </ul>
+        </section>
+        
+
+        <section id="search-product">
+            <h2>Search Product</h2>
+            <!-- Search form with input fields -->
+            <form action="search_product.php" method="GET">
+                <label for="search-product-name">Product Name:</label>
+                <input type="text" id="search-product-name" name="search-product-name">
+        
+                <label for="search-product-price-from">Price from:</label>
+                <input type="number" id="search-product-price-from" name="search-product-price-from" step="0.01">
+        
+                <label for="search-product-price-to">Price to:</label>
+                <input type="number" id="search-product-price-to" name="search-product-price-to" step="0.01">
+        
+                <!-- Add a submit button to initiate the search -->
+                <button type="submit">Search</button>
+            </form>
+        
+            <!-- Display search results here -->
+            <div id="search-results">
+                <!-- Results will be populated dynamically using server-side scripting -->
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2023 73Car. All rights reserved.</p>
+    </footer>
+    <script src="../js/scripts.js"></script>
+</body>
+</html>

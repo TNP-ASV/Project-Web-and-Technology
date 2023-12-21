@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Account Management</title>
+    <!-- Include your CSS and JavaScript files here -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+    <!-- Header section -->
+    <header>
+        <h1>Admin Account Management Page</h1>
+            <nav class="main-nav">
+                <div class="menu-toggle" id="menu-toggle">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <ul class="menu" id="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="admin-main.html">Home admin</a></li>
+                </ul>
+            </nav>
+    </header>
+    <!-- Navigation menu (if needed) -->
+
+    <!-- Main content section -->
+    <main>
+        <!-- User Search Section -->
+        <section id="user-search">
+            <h2>Search User</h2>
+            <!-- User search form -->
+            <form>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username">
+                <button type="submit">Search</button>
+            </form>
+
+            <!-- Display search results here -->
+            <div id="search-results">
+                <!-- Search results will be displayed here -->
+            </div>
+        </section>
+
+        <!-- User Add Section -->
+        <section id="user-add">
+            <h2>Add User</h2>
+            <!-- User add form -->
+            <form>
+                <label for="new-username">Username:</label>
+                <input type="text" id="new-username" name="new-username">
+                <label for="new-email">Email:</label>
+                <input type="email" id="new-email" name="new-email">
+                <!-- Add more fields as needed -->
+                <button type="submit">Add User</button>
+            </form>
+        </section>
+
+        <!-- User Update Section -->
+        <section id="user-update">
+            <h2>Update User</h2>
+            <!-- User update form -->
+            <form>
+                <label for="update-username">Username:</label>
+                <input type="text" id="update-username" name="update-username">
+                <!-- Add more fields for updating user information -->
+                <button type="submit">Update User</button>
+            </form>
+        </section>
+
+        <!-- User Delete Section -->
+        <section id="user-delete">
+            <h2>Delete User</h2>
+            <!-- User delete form -->
+            <form>
+                <label for="delete-username">Username:</label>
+                <input type="text" id="delete-username" name="delete-username">
+                <button type="submit">Delete User</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer section -->
+    <footer>
+        <p>&copy; 2023 73Car. All rights reserved.</p>
+    </footer>
+
+    <!-- Include your JavaScript file at the end of the body -->
+    <script src="../js/scripts.js"></script>
+</body>
+</html>

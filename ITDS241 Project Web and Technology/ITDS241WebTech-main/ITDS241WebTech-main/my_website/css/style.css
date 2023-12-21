@@ -1,0 +1,327 @@
+/* Global Styles */
+body {
+    background-image: url('../images/bg.jpg');
+    background-repeat: repeat; /* Repeat the pattern vertically and horizontally */
+    color: white; /* Text color */
+    margin: 0; /* Remove default margin */
+    font-family: Arial, sans-serif; /* Choose a suitable font family */
+
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+/* Navigation Menu Styles */
+.main-nav {
+    background-color: orange;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.menu-toggle {
+    display: block;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.bar {
+    width: 100%;
+    height: 4px;
+    background-color: #333; /* Change to your desired color */
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+.menu-toggle.active .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.menu-toggle.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin: 0 20px;
+}
+
+.menu.active a {
+    color: white;
+}
+
+.menu.active li {
+    margin: 15px 0;
+}
+
+.menu a,
+a.login-link {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+    text-transform: uppercase;
+}
+
+.menu a:hover,
+a.login-link:hover {
+    color: rgb(163, 9, 9);
+    font-weight: bold;
+}
+
+/* Product Detail Page Styles */
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.car-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.car-details {
+    margin-top: 20px;
+    text-align: left; /* Align text to the left */
+}
+
+.car-details h1 {
+    font-size: 1.5em; /* Adjust heading font size */
+}
+
+/* Form Styles (if needed) */
+form {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+button[type="submit"] {
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: darkorange;
+}
+
+input[type="text"],
+input[type="password"] {
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Additional styles for specific elements can be added as needed */
+
+/* Home Page Styles */
+main .hero {
+    text-align: center;
+    padding: 100px 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+}
+
+main .hero h1 {
+    font-size: 3em; /* Larger heading for the hero section */
+    margin-bottom: 20px;
+}
+
+main .hero p {
+    font-size: 1.2em; /* Slightly larger text for the hero section */
+}
+
+/* Featured Cars Section */
+.main .featured-cars {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.car {
+    background-color: rgba(44, 42, 42, 0.7); /* Semi-transparent background for car containers */
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+}
+
+.car h3 {
+    font-size: 1.2em; /* Adjust heading font size for cars */
+}
+
+.car p {
+    font-size: 1em; /* Adjust text font size for car details */
+}
+
+.car .btn {
+    background-color: darkorange;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    text-decoration: none; /* Remove underline from buttons */
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.car .btn:hover {
+    background-color: orange;
+}
+
+/* Eng typed */
+.car_type{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-color: beige;
+ border-radius: 10px;
+ width: auto;
+ text-align: center;
+}
+
+.typeofcar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-color: bisque;    
+}
+
+.car_type  img:hover {
+    transform: scale(1.4);
+    transition: transform 0.3s;
+
+}
+
+.Profile{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    
+}
+.CEO{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 170px;
+    border-radius: 10px;
+    margin: 50px;
+    background-color: rgba(103, 98, 78, 0.69);
+    
+
+}
+
+.CEO img{
+    margin: auto 10px;
+    width: 150px;
+    height: 150px;
+}
+
+.intro{
+    overflow: auto;
+  
+}
+
+.promote-right img{
+    float: right;
+    margin-left: 10px;
+}
+
+.promote-right p{
+    margin: 0;
+  }
+
+.promote-left img{
+    float: left;
+    margin-right: 10px;
+}
+
+.promote-left p{
+    margin: 0;
+  }
+
+.new-car{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+#selec {
+    background-color: #b8b6b1a5;
+    padding: 50;
+    display: flex;
+    border-color: #8a713a;
+    text-align: center;   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+}
+
+#selec a{
+    color: aliceblue;
+}
+
+content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    vertical-align: middle;
+
+}
+
+i {
+    color: #4d76d5;
+}
+
+.colum a {
+    color: rgb(224, 217, 165);
+}

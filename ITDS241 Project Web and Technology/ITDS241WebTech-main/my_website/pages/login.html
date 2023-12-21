@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Log In</title>
+    <!-- Include your CSS file here -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <div class="menu-toggle" id="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="menu" id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Log In</a></li>
+                <li><a href="search.html">Search</a></li>
+                <li><a href="about-us.html">AboutUs</a></li>
+                <li><a href="product-detail.html">ProductDetail</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Your login page content goes here -->
+    <h1>Log In</h1>
+    <!-- Login form -->
+    <form id="login-form">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required pattern="[A-Za-z0-9]+" required title="Alphabets and numbers only, no spaces or special characters allowed">
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required pattern="[A-Za-z0-9]+" required title="Alphabets and numbers only, no spaces or special characters allowed">
+
+        <button type="submit">Log In</button>
+        <a href="admin-product.html" class="login-link">Log In</a>
+        <!-- <button type="button" onclick="fakeLogin()">Log In</button> -->
+    </form>
+    <!--
+<script>
+    function fakeLogin() {
+        // Simulate a successful login
+        alert('Login successful.');
+        window.location.href = 'admin-product.html';
+    }
+</script>
+-->
+<footer>
+    <p>&copy; 2023 73Car. All rights reserved.</p>
+</footer>
+<script src="../js/scripts.js"></script>
+</html>

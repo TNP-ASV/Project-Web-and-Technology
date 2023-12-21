@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Page</title>
+    <!-- Include your CSS and JavaScript files here -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <div class="menu-toggle" id="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="menu" id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Log In</a></li>
+                <li><a href="search.html">Search</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="product-detail.html">Product Detail</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Your search page content goes here -->
+    <h1>Search Page</h1>
+    
+    <!-- Search form -->
+    <form id="search-form" action="product-detail.html" method="get">
+        <input type="text" id="search-input" name="keyword" placeholder="Search...">
+        <button type="submit">Search</button>
+    </form>
+
+    <!-- Search results -->
+    <div id="search-results">
+        <!-- Results will be displayed here -->
+<br>
+<section class="typeofcar">
+    <section class="car_type">
+        <a href="product-detail.html" target="_blank" rel="noopener noreferrer"><img src="../images/car_type/image-removebg-preview.png"alt="Sedan" height="150px"></a>
+        <h4>SEDAN</h4>
+    </section>
+
+
+    <section class="car_type">
+        <a href="product-detail.html" target="_blank" rel="noopener noreferrer"><img src="../images/car_type/image-removebg-preview (3).png" alt="Hatchback" height="150px"></a>
+        <h4>HATCHBACK</h4>
+    </section>
+
+    <section class="car_type">
+        <a href="product-detail.html" target="_blank" rel="noopener noreferrer"><img src="../images/car_type/image-removebg-preview (1).png" alt="Coupe" height="150px"></a>
+            
+        <H4>COUPE</H4>
+    </section>
+
+    <section class="car_type">
+        <a href="product-detail.html" target="_blank" rel="noopener noreferrer"> <img src="../images/car_type/image-removebg-preview(4).png" alt="ranrover" height="150px"></a>
+       
+       
+        <h4>SUV</h4>
+    </section>
+
+</section>
+
+
+
+
+
+        <!-- This is a placeholder for demonstration purposes -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Product Name</th>
+                    <th>Category</th>
+                    <th>Rating</th>
+                    <th>Details</th> <!-- Added a column for details -->
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Product 1</td>
+                    <td>Category A</td>
+                    <td>4.5</td>
+                    <td><a href="product-detail.html">Details</a></td> <!-- Link to product details page -->
+                </tr>
+                <tr>
+                    <td>Product 2</td>
+                    <td>Category B</td>
+                    <td>3.8</td>
+                    <td><a href="product-detail.html">Details</a></td> <!-- Link to product details page -->
+                </tr>
+                <!-- Add more rows for search results here -->
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
